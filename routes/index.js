@@ -8,7 +8,7 @@ router.get('/', function(req, res, next) {
 var hour = d.getHours();
 var day = d.getDay();
   console.log(d,"-",hour,"-",day)
-if (hour > 0 && hour < 17 && day >= 0 && day < 8) {
+if (hour > 0 && hour < 17 ) {
     res.render('home');
 
   }else{
